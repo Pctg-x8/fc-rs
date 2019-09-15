@@ -1,5 +1,4 @@
 #![allow(non_upper_case_globals)]
-#![link(name = "fontconfig")]
 
 use libc::*;
 #[cfg(feature = "with-freetype")]
@@ -245,6 +244,7 @@ pub enum FcStrList {}
 pub enum FcStrSet {}
 pub enum FcCache {}
 
+#[link(name = "fontconfig")]
 extern "C"
 {
     pub fn FcBlanksCreate() -> *mut FcBlanks;
