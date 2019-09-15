@@ -1,6 +1,10 @@
 #![allow(non_upper_case_globals)]
 
 use libc::*;
+#[cfg(feature = "with-freetype")]
+mod freetype;
+#[cfg(feature = "with-freetype")]
+pub use self::freetype::*;
 
 pub type FcChar8 = c_uchar;
 pub type FcChar16 = c_ushort;

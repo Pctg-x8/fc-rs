@@ -7,5 +7,13 @@ edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[features]
+default = []
+with-freetype = ["freetype2"]
+
 [dependencies]
 libc = "0.2"
+
+[dependencies.freetype2]
+git = "https://github.com/Pctg-x8/ft2-rs"
+optional = true
