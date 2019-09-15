@@ -1,4 +1,5 @@
 #![allow(non_upper_case_globals)]
+#![link(name = "fontconfig")]
 
 use libc::*;
 #[cfg(feature = "with-freetype")]
