@@ -3,7 +3,7 @@ name = "fontconfig"
 version = "2.13.1"
 description = "fontconfig capi simple binding for rust"
 authors = ["S.Percentage <Syn.Tri.Naga@gmail.com>"]
-edition = "2018"
+edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
